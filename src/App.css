@@ -27,7 +27,6 @@ body {
 
 .img-grayscale {
   filter: grayscale(1);
-  height: 100%;
   width: auto;
 }
 
@@ -46,6 +45,9 @@ body {
   .caption {
     position: absolute;
     top: 35%;
+  }
+  .img-grayscale {
+    margin-top: 56px;
   }
 }
 
