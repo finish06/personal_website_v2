@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +23,58 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.img-grayscale {
+  filter: grayscale(1);
+  height: 100%;
+  width: auto;
+}
+
+.caption-item {
+  color: black;
+}
+
+@media (min-width: 1250px) {
+  .caption {
+    position: absolute;
+    top: 65%;
+  }
+}
+
+@media (max-width: 1249px) {
+  .caption {
+    position: absolute;
+    top: 35%;
+  }
+}
+
+
+
+.img-tulsa {
+  height: 25vh;
+}
+
+#about {
+  line-height: 2.0rem;
+}
+
+.spacer {
+  margin: 2em;
+}
+
+.ed-location {
+  margin-bottom: 0px;
+}
+
+.cert-location {
+  margin-bottom: 0px;
+}
+
+.pro-location {
+  margin-bottom: 0px;
+}
+
+.img-photo {
+  height: 35vh !important;
 }
