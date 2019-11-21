@@ -73,7 +73,6 @@ class MyBackdrop extends React.Component {
     componentDidMount() {
         this.updateScreenSize();
         window.addEventListener("resize", this.updateScreenSize);
-        console.log("resize ready")
     }
 
     componentWillUnmount() {
@@ -82,7 +81,6 @@ class MyBackdrop extends React.Component {
 
     updateScreenSize() {
         this.setState({ isMobile: window.innerWidth > 1200 });
-        console.log('test')
     }
 
     render() {
