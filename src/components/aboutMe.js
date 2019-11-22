@@ -11,13 +11,13 @@ class AboutMe extends React.Component {
 
     render() {
         return (
-            <Row id="about" className="bg-white py-5" noGutters>
+            <Row id="about" className="bg-white py-4" noGutters>
                 <Col sm="12" lg="6">
                     <div align="center">
                         <Image className="img-tulsa align-self-center" src={tulsa} rounded></Image> 
                     </div>
                 </Col>
-                <Col md={{ span: 12 }} lg="6" align="center" className="text-center">
+                <Col sm="12" md="12" lg="6" align="center" className="text-center pt-3">
                     <Row>
                         <Col align="center" className="text-center" md={{ offset: 1, span: 10 }}>
                             <h2 className="display-4">Who I Am</h2>
