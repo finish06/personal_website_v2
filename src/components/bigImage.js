@@ -28,7 +28,32 @@ function XlScreen(props) {
     )
 }
 
-function NoXlScreen(props) {
+function LgScreen(props) {
+    return (
+        <Carousel slide={false} interval={2000} controls={false}>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={backdrop} fluid></Image>
+                <Carousel.Caption className="caption">
+                    <h1 className="display-3 caption-item font-weight-bold">Technology<br />Enthusiast</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={backdrop} fluid></Image>                
+                <Carousel.Caption className="caption">
+                    <h1 className="display-3 caption-item font-weight-bold">Hobbyist<br />Programmer</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={backdrop} fluid></Image>
+                <Carousel.Caption className="caption">
+                    <h1 className="display-3 caption-item font-weight-bold">Product<br />Analyst</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    )
+}
+
+function MdSmScreen(props) {
     return (
         <Carousel slide={false} interval={2000} controls={false}>
             <Carousel.Item>
@@ -53,13 +78,12 @@ function NoXlScreen(props) {
     )
 }
 
-function ScreenSize(props) {
-    const isMobile = window.innerWidth < 1200;
-    if (!isMobile) {
-        return (<XlScreen />)
+function NoXlScreen(props) {
+    if (window.innerWidth > 750) {
+        return(LgScreen())
     }
     else {
-        return (null)
+        return(MdSmScreen())
     }
 }
 
@@ -80,17 +104,19 @@ class MyBackdrop extends React.Component {
     }
 
     updateScreenSize() {
-        this.setState({ isMobile: window.innerWidth > 1200 });
+        this.setState({ isMobile: window.outerWidth < 1250 });
     }
 
     render() {
         const isMobile = this.state.isMobile;
+        console.log(window.innerWidth)
+        console.log(isMobile)
         return (
             <div>
-                {isMobile ? (<XlScreen />) : (<NoXlScreen />)}
+                {isMobile ? (<NoXlScreen />) : (<XlScreen />)}
             </div>
         )
     }
 }
 
-export default MyBackdrop
+export default MyBackdrop 
