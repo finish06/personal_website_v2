@@ -14,7 +14,16 @@ class MyResume extends React.Component {
         return (
             <div className="px-4 py-5 bg-light" id="resume">
                 <Row>
-                    <Col className="order-md-2 order-sm-2 order-lg-2" lg={{ span: 7}} xl={{ span: 5, offset: 0 }}>
+                    <Col className="align-self-center order-lg-1 order-xl-3" lg={{ span: 6 }} xl={{ span: 3 }}>
+                        <Row>
+                            <Col>
+                                <div align="center">
+                                  <Image src={professionalPhoto} thumbnail className="img-photo"></Image>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col className="order-xl-1 order-lg-3 order-md-2" lg={{ span: 12}} xl={{ span: 5 }}>
                          <Row>
                             <Col align="center">
                                 <h2 className="display-4">Professional Experience</h2>
@@ -60,10 +69,10 @@ class MyResume extends React.Component {
                             <Col>
                                 <p className="pro-location">Ascension Technologies, Tulsa, OK</p>
                                 <ul>
-                                    <li>Develop and maintian pharmacy system standards</li>
+                                    <li>Develop and maintain pharmacy system standards</li>
                                     <li>Analyze system issues and develop solutions</li>
                                     <li>Coordinate with pharmacy staff to create and maintian pharmacy information solutions</li>
-                                    <li>Encourage and assit colleagues in skill development</li>
+                                    <li>Encourage and assist colleagues in skill development</li>
                                 </ul>
                             </Col>
                         </Row>
@@ -71,7 +80,7 @@ class MyResume extends React.Component {
                             <Col>
                                 <Row>
                                     <Col>
-                                        <h3>Pharmacist</h3>
+                                        <h3>Staff Pharmacist</h3>
                                     </Col>
                                     <Col>
                                         <h4 align="right">December 2014 - Present</h4>
@@ -83,14 +92,14 @@ class MyResume extends React.Component {
                             <Col>
                                 <p className="pro-location">Saint Francis Children's Hospital, Tulsa, OK</p>
                                 <ul>
-                                    <li>Review medicaiton orders for safety and appropriateness</li>
+                                    <li>Review medicaton orders for safety and appropriateness</li>
                                     <li>Supervise support staff, e.g. pharmacy technicians and interns</li>
                                     <li>Provide medication information and education as requested</li>
                                 </ul>
                             </Col>
                         </Row>
                     </Col>
-                    <Col className="order-md-3 order-sm-3 order-lg-3" lg={{span: 5}} xl={{ span: 4 }}>
+                    <Col className="order-xl-2 order-lg-2 order-md-3" lg={{span: 6}} xl={{ span: 4 }}>
                         <Row>
                             <Col align="center">
                                 <h2 className="display-4">Education</h2>
@@ -139,15 +148,6 @@ class MyResume extends React.Component {
                         <Row>
                             <Col xl={{ offset: 1 }}>
                                 <p>Spring 2012</p>
-                            </Col>
-                        </Row>
-                    </Col>
-                    <Col lg={{ span: 12 }} xl={{ span: 3 }} className="align-self-center order-lg-1 order-xl-3 order-md-1 order-sm-1">
-                        <Row>
-                            <Col>
-                                <div align="center">
-                                  <Image src={professionalPhoto} thumbnail className="img-photo"></Image>
-                                </div>
                             </Col>
                         </Row>
                     </Col>
