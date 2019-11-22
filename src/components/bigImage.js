@@ -8,7 +8,7 @@ import backdrop from '../images/backdrop.jpg';
 function XlScreen(props) {
     return (
         <div>
-            <Row id="home" noGutters className="pb-5 text-center">
+            <Row id="home" noGutters className="text-center">
                 <Col>
                     <Image className="img-grayscale" src={backdrop} fluid></Image>
                 </Col>
