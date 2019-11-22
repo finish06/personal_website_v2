@@ -31,7 +31,7 @@ body {
 }
 
 .caption-item {
-  color: black;
+  color: royalblue;
 }
 
 @media (min-width: 1250px) {
@@ -50,8 +50,6 @@ body {
     margin-top: 56px;
   }
 }
-
-
 
 .img-tulsa {
   height: 25vh;
