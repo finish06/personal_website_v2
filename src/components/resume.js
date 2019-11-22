@@ -14,7 +14,7 @@ class MyResume extends React.Component {
         return (
             <div className="px-4 py-5 bg-light" id="resume">
                 <Row>
-                    <Col className="align-self-center order-lg-1 order-xl-3" lg={{ span: 6 }} xl={{ span: 3 }}>
+                    <Col className="align-self-center order-lg-1 order-xl-3 py-3" lg={{ span: 6 }} xl={{ span: 3 }}>
                         <Row>
                             <Col>
                                 <div align="center">
@@ -23,7 +23,7 @@ class MyResume extends React.Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col className="order-xl-1 order-lg-3 order-md-2" lg={{ span: 12}} xl={{ span: 5 }}>
+                    <Col className="order-xl-1 order-lg-3 order-md-2 py-3" lg={{ span: 12}} xl={{ span: 5 }}>
                          <Row>
                             <Col align="center">
                                 <h2 className="display-4">Professional Experience</h2>
@@ -99,7 +99,7 @@ class MyResume extends React.Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col className="order-xl-2 order-lg-2 order-md-3" lg={{span: 6}} xl={{ span: 4 }}>
+                    <Col className="order-xl-2 order-lg-2 order-md-3 py-3" lg={{span: 6}} xl={{ span: 4 }}>
                         <Row>
                             <Col align="center">
                                 <h2 className="display-4">Education</h2>
