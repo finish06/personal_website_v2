@@ -16,7 +16,6 @@ function App() {
       <MyNavbar />
       <MyBackdrop />
       <AboutMe />
-      <Spacer />
       <MyResume />
       <MyCerts />
     </Container>
