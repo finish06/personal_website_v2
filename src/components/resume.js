@@ -12,7 +12,7 @@ class MyResume extends React.Component {
 
     render() {
         return (
-            <div className="px-4 py-5 bg-light" id="resume">
+            <div className="px-4 py-4 bg-light" id="resume">
                 <Row>
                     <Col className="align-self-center order-lg-1 order-xl-3 py-3" lg={{ span: 6 }} xl={{ span: 3 }}>
                         <Row>

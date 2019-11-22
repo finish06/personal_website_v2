@@ -12,12 +12,12 @@ class AboutMe extends React.Component {
     render() {
         return (
             <Row id="about" className="bg-white py-4" noGutters>
-                <Col sm="12" lg="6">
+                <Col className="py-3" sm="12" lg="6">
                     <div align="center">
-                        <Image className="img-tulsa align-self-center pt-3" src={tulsa} rounded></Image> 
+                        <Image className="img-tulsa align-self-center py-3" src={tulsa} rounded></Image> 
                     </div>
                 </Col>
-                <Col sm="12" md="12" lg="6" align="center" className="text-center pt-3">
+                <Col sm="12" md="12" lg="6" align="center" className="text-center py-3">
                     <Row>
                         <Col align="center" className="text-center" md={{ offset: 1, span: 10 }}>
                             <h2 className="display-4">Who I Am</h2>
