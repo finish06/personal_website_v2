@@ -14,7 +14,7 @@ class AboutMe extends React.Component {
             <Row id="about" className="bg-white py-4" noGutters>
                 <Col sm="12" lg="6">
                     <div align="center">
-                        <Image className="img-tulsa align-self-center" src={tulsa} rounded></Image> 
+                        <Image className="img-tulsa align-self-center pt-3" src={tulsa} rounded></Image> 
                     </div>
                 </Col>
                 <Col sm="12" md="12" lg="6" align="center" className="text-center pt-3">
