@@ -8,7 +8,7 @@ import backdrop from '../images/backdrop.jpg';
 function XlScreen(props) {
     return (
         <div>
-            <Row id="home" noGutters className="text-center">
+            <Row noGutters className="text-center">
                 <Col>
                     <Image className="img-grayscale" src={backdrop} fluid></Image>
                 </Col>
@@ -112,7 +112,7 @@ class MyBackdrop extends React.Component {
         console.log(window.innerWidth)
         console.log(isMobile)
         return (
-            <div>
+            <div id="home">
                 {isMobile ? (<NoXlScreen />) : (<XlScreen />)}
             </div>
         )
