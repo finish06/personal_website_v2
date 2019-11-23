@@ -92,7 +92,7 @@ class MyResume extends React.Component {
                             <Col>
                                 <p className="pro-location">Saint Francis Children's Hospital, Tulsa, OK</p>
                                 <ul>
-                                    <li>Review medicaton orders for safety and appropriateness</li>
+                                    <li>Review medication orders for safety and appropriateness</li>
                                     <li>Supervise support staff, e.g. pharmacy technicians and interns</li>
                                     <li>Provide medication information and education as requested</li>
                                 </ul>
