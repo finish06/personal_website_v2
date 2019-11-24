@@ -21,7 +21,7 @@ class MyCerts extends React.Component {
 
     render() {
         return (
-            <Container id="certs" className="bg-dark py-5 text-light" fluid>
+            <Container id="certs" className="certs-container py-5 text-dark" fluid>
                 <Row>
                     <Col md={{offset: 1}}>
                         <h2 className="display-4">Certificates</h2>
