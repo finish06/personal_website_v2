@@ -49,7 +49,7 @@ class MyResume extends React.Component {
                                     <li>Design enhancement requirements and acceptance criteria</li>
                                     <li>Prioritize and rank enhancements and incidents</li>
                                     <li>Collaborate with development and UI/UX</li>
-                                    <li>Perofrm User Acceptance Testing</li>
+                                    <li>Perform User Acceptance Testing</li>
                                 </ul>
                             </Col>
                         </Row>
