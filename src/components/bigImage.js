@@ -3,28 +3,29 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from 'react-bootstrap/Carousel'
-import backdrop from '../images/backdrop.jpg';
+import hobb_prog from '../images/backdrop/hobb_prog.png';
+import prod_analyst from '../images/backdrop/prod_analyst.png';
+import tech_enth from '../images/backdrop/tech_enth.png';
+import hobb_prog_small from '../images/backdrop/hobb_prog_small.png';
+import prod_analyst_small from '../images/backdrop/prod_analyst_small.png';
+import tech_enth_small from '../images/backdrop/tech_enth_small.png';
+import hobb_prog_med from '../images/backdrop/hobb_prog_med.png';
+import prod_analyst_med from '../images/backdrop/prod_analyst_med.png';
+import tech_enth_med from '../images/backdrop/tech_enth_med.png';
 
 function XlScreen(props) {
     return (
-        <div>
-            <Row noGutters className="text-center">
-                <Col>
-                    <Image className="img-grayscale" src={backdrop} fluid></Image>
-                </Col>
-            </Row>
-            <Row className="caption text-center" noGutters>
-                <Col>
-                    <p className="display-3 font-weight-bold text-light">Technology Enthusiast</p>
-                </Col>
-                <Col>
-                    <p className="display-3 font-weight-bold text-dark">Hobbyist Programmer</p>
-                </Col>
-                <Col>
-                    <p className="display-3 font-weight-bold text-light">Product<br />Analyst</p>
-                </Col>
-            </Row>
-        </div>   
+        <Carousel slide={false} interval={2000} controls={false}>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={hobb_prog} fluid></Image>
+            </Carousel.Item>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={prod_analyst} fluid></Image>                
+            </Carousel.Item>
+            <Carousel.Item>
+                <Image className="img-grayscale" src={tech_enth} fluid></Image>
+            </Carousel.Item>
+        </Carousel> 
     )
 }
 
@@ -32,22 +33,13 @@ function LgScreen(props) {
     return (
         <Carousel slide={false} interval={2000} controls={false}>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>
-                <Carousel.Caption className="caption">
-                    <h1 className="display-3 caption-item font-weight-bold">Technology<br />Enthusiast</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={prod_analyst_med} fluid></Image>
             </Carousel.Item>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>                
-                <Carousel.Caption className="caption">
-                    <h1 className="display-3 caption-item font-weight-bold">Hobbyist<br />Programmer</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={tech_enth_med} fluid></Image>                
             </Carousel.Item>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>
-                <Carousel.Caption className="caption">
-                    <h1 className="display-3 caption-item font-weight-bold">Product<br />Analyst</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={hobb_prog_med} fluid></Image>
             </Carousel.Item>
         </Carousel>
     )
@@ -57,22 +49,13 @@ function MdSmScreen(props) {
     return (
         <Carousel slide={false} interval={2000} controls={false}>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>
-                <Carousel.Caption className="caption">
-                    <h1 className="caption-item font-weight-bold">Technology<br />Enthusiast</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={prod_analyst_small} fluid></Image>
             </Carousel.Item>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>                
-                <Carousel.Caption className="caption">
-                    <h1 className="caption-item font-weight-bold">Hobbyist<br />Programmer</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={tech_enth_small} fluid></Image>                
             </Carousel.Item>
             <Carousel.Item>
-                <Image className="img-grayscale" src={backdrop} fluid></Image>
-                <Carousel.Caption className="caption">
-                    <h1 className="caption-item font-weight-bold">Product<br />Analyst</h1>
-                </Carousel.Caption>
+                <Image className="img-grayscale" src={hobb_prog_small} fluid></Image>
             </Carousel.Item>
         </Carousel>
     )
