@@ -21,7 +21,7 @@ class AboutMe extends React.Component {
                     <Row>
                         <Col align="center" className="text-center" md={{ offset: 1, span: 10 }}>
                             <h2 className="display-4">Who I Am</h2>
-                            <p className="lead">I live in Tulsa with my wife and two dogs.  I love all things coffee, be it espresso, pour over, drip and more!  I am a licensed pharmacist in Oklahoma and Kansas.  I currently work as a clinical product analyst driving the future of healthcare software.  My favorite pasttime involves playing with all things technology: frontend Javascript, data science with Python, and automation with Ansible.</p>
+                            <p className="lead">I live in Tulsa with my wife, son and two dogs.  I love all things coffee, be it espresso, pour over, drip and more!  I am a licensed pharmacist in Oklahoma and Kansas.  I currently work as a clinical product analyst driving the future of healthcare software.  My favorite pasttime involves playing with all things technology: frontend Javascript, data science with Python, and automation with Ansible.</p>
                         </Col>
                     </Row>
                 </Col>
