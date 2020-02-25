@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from 'react-bootstrap/Carousel'
 import backdrop from '../images/backdrop/hobb_prog_tech_enth_prod_analyst.png';
-import hobb_prog_small from '../images/backdrop/hobb_prog_small.png';
-import prod_analyst_small from '../images/backdrop/prod_analyst_small.png';
-import tech_enth_small from '../images/backdrop/tech_enth_small.png';
+import hobb_prog_small from '../images/backdrop/hobb_prog_small_crop.png';
+import prod_analyst_small from '../images/backdrop/prod_analyst_small_crop.png';
+import tech_enth_small from '../images/backdrop/tech_enth_small_crop.png';
 import hobb_prog_med from '../images/backdrop/hobb_prog_med.png';
 import prod_analyst_med from '../images/backdrop/prod_analyst_med.png';
 import tech_enth_med from '../images/backdrop/tech_enth_med.png';
