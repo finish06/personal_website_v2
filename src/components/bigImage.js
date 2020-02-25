@@ -3,9 +3,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from 'react-bootstrap/Carousel'
-import hobb_prog from '../images/backdrop/hobb_prog.png';
-import prod_analyst from '../images/backdrop/prod_analyst.png';
-import tech_enth from '../images/backdrop/tech_enth.png';
+import backdrop from '../images/backdrop/hobb_prog_tech_enth_prod_analyst.png';
 import hobb_prog_small from '../images/backdrop/hobb_prog_small.png';
 import prod_analyst_small from '../images/backdrop/prod_analyst_small.png';
 import tech_enth_small from '../images/backdrop/tech_enth_small.png';
@@ -15,17 +13,13 @@ import tech_enth_med from '../images/backdrop/tech_enth_med.png';
 
 function XlScreen(props) {
     return (
-        <Carousel slide={false} interval={2000} controls={false}>
-            <Carousel.Item>
-                <Image className="img-grayscale" src={hobb_prog} fluid></Image>
-            </Carousel.Item>
-            <Carousel.Item>
-                <Image className="img-grayscale" src={prod_analyst} fluid></Image>                
-            </Carousel.Item>
-            <Carousel.Item>
-                <Image className="img-grayscale" src={tech_enth} fluid></Image>
-            </Carousel.Item>
-        </Carousel> 
+        <div>
+            <Row noGutters>
+                <Col>
+                    <Image className="img-grayscale" src={backdrop} fluid></Image>
+                </Col>
+            </Row>
+        </div>
     )
 }
 
