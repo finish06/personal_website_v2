@@ -13,12 +13,12 @@ class MyNavbar extends React.Component {
         return (
             <Container fluid className="px-0">
                 <Navbar fixed="top" bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Caleb Dunn</Navbar.Brand>
+                <Navbar.Brand href="/#home">Caleb Dunn</Navbar.Brand>
                     <Nav>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#resume">Resume</Nav.Link>
-                        <Nav.Link href="#certs">Certificates</Nav.Link>
+                        <Nav.Link href="/#about">About</Nav.Link>
+                        <Nav.Link href="/#resume">Resume</Nav.Link>
+                        <Nav.Link href="/#certs">Certificates</Nav.Link>
+                        <Nav.Link href="/graphs">Home Temps</Nav.Link>
                     </Nav>
                 </Navbar>
             </Container>

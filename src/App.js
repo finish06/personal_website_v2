@@ -1,24 +1,38 @@
 import React from 'react';
 import './App.css';
-import Counter from './counter.js';
-import MyNavbar from './components/navbar.js';
-import AboutMe from './components/aboutMe.js';
-import Spacer from './components/spacer.js';
-import MyResume from './components/resume.js';
-import MyCerts from "./components/certs.js";
-import MyBackdrop from './components/bigImage.js';
-import Container from "react-bootstrap/Container";
-
+import Home from './pages/home.js'
+import Home_Temps from './pages/temps.js'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <Container fluid className="px-0">
-      <MyNavbar />
-      <MyBackdrop />
-      <AboutMe />
-      <MyResume />
-      <MyCerts />
-    </Container>
+    <Router>
+      <div>
+        <nav className="hidden">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>        
+            </li>
+            <li>
+              <Link to="/graphs">Home Temps</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path="/graphs">
+            <Home_Temps />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
