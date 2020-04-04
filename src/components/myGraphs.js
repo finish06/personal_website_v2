@@ -24,7 +24,7 @@ class MyGraph extends React.Component {
     let info_array = []
     for (let room in this.state.rooms) {
       let room_name = this.state.rooms[room]
-      let url = "https://home.calebdunn.tech:24242/temps/" + room_name
+      let url = "http://api.calebdunn.tech:24242/temps/" + room_name
       await fetch(url, {method: "GET"})
         .then(response => response.json())
         .then(
