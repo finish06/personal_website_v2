@@ -1,0 +1,19 @@
+---
+
+kind: pipeline
+name: default
+
+steps:
+    - name: Update webserver
+      image: appleboy/drone-ssh
+      settings:
+        host: 192.168.1.26
+        username:
+            from_secret: username
+        key:
+            from_secret: ssh_key
+        port: 22
+        script:
+            - cd /var/www/personal_website_v2/
+            - git pull
+            - npm run build
