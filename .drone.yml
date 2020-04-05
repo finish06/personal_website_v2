@@ -1,7 +1,7 @@
 ---
 
 kind: pipeline
-name: deploy www.alebdunn.tech website
+name: deploy www.calebdunn.tech website
 
 steps:
     - name: Update webserver
