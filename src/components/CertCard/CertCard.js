@@ -1,21 +1,14 @@
 //import './CertCard.css'
 import React from 'react';
-import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
-const certcard = (props) => {
+const cert = (props) => {
     return (
-        <Card>
-            <Card.Img variant="top"/>
-            <Card.Body>
-            <Card.Title>{props.title}</Card.Title>
-            <Card.Text className="text-center">
-            </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-                Completed: {props.date}
-            </Card.Footer>
-        </Card>
+        <Col  className="py-3" md={6} lg={4} xl={3}>
+            <Image src={props.cert} rounded fluid></Image>
+        </Col>
     )
 }
 
-export default certcard;
+export default cert;

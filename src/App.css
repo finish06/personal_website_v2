@@ -82,3 +82,7 @@ body {
 .hidden {
   display: none;
 }
+
+.btn-link {
+  color: #212529 !important;
+}
