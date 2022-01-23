@@ -14,7 +14,6 @@ function Home() {
       <MyBackdrop />
       <AboutMe />
       <MyResume />
-      <MyCerts />
     </Container>
   );
 }
